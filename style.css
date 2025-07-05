@@ -1,0 +1,413 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #0f0f1a;
+  color: #f0f0f0;
+  line-height: 1.6;
+  padding-top: 70px;
+  min-height: 100vh;
+}
+
+nav {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background: #1a1a2e;
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  z-index: 1000;
+}
+
+nav a {
+  color: #00ffee;
+  text-decoration: none;
+  font-weight: 600;
+  transition: color 0.3s ease;
+  font-size: 1rem;
+}
+
+nav a:hover {
+  color: #ffd369;
+}
+
+.section {
+  display: none;
+  padding: 3rem 2rem;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.section.active,
+.section:target {
+  display: block;
+}
+
+.home-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2rem;
+  flex-wrap: wrap;
+  min-height: 75vh;
+}
+
+.home-content {
+  flex: 1 1 350px;
+  max-width: 600px;
+}
+
+.home-content h1 {
+  font-size: 2.8rem;
+  margin-bottom: 0.5rem;
+}
+
+.highlight {
+  color: #ffd369;
+}
+
+.typing-text {
+  font-size: 1.3rem;
+  height: 1.8rem;
+  margin-bottom: 1rem;
+  color: #00ffee;
+  font-weight: 600;
+  font-family: monospace, monospace;
+  min-height: 30px;
+  letter-spacing: 1.5px;
+}
+
+.home-content p {
+  font-size: 1.1rem;
+  margin-bottom: 1.8rem;
+  color: #bbb;
+}
+
+.button-group {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.resume-btn,
+.github-btn {
+  padding: 0.65rem 1.5rem;
+  border-radius: 8px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+  display: inline-block;
+  text-align: center;
+  cursor: pointer;
+  user-select: none;
+  margin-top: 1rem;
+  margin-right: 0.8rem;
+}
+
+.resume-btn {
+  background-color: #ffd369;
+  color: #000;
+}
+
+.resume-btn:hover {
+  background-color: #ffb347;
+}
+
+.github-btn {
+  background-color: #00ffee;
+  color: #000;
+}
+
+.github-btn:hover {
+  background-color: #00c7b1;
+}
+
+.home-image {
+  flex: 1 1 350px;
+  text-align: center;
+}
+
+.home-image img {
+  max-width: 100%;
+  height: auto;
+  transition: transform 0.3s ease;
+  border-radius: 12px;
+  display: block;
+}
+
+.home-image img:hover {
+  transform: scale(1.05);
+}
+
+.about-container {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2rem;
+}
+
+.about-text {
+  flex: 1 1 350px;
+  min-width: 280px;
+}
+
+.about-text h1 {
+  color: #ffd369;
+  font-size: 2.2rem;
+  margin-bottom: 0.5rem;
+}
+
+.about-text h3 {
+  color: #00ffee;
+  margin-bottom: 1rem;
+}
+
+.tagline {
+  font-style: italic;
+  color: #bbb;
+  margin-bottom: 1rem;
+}
+
+.about-details p {
+  line-height: 1.8;
+  font-size: 0.95rem;
+  color: #ddd;
+}
+
+.about-image {
+  flex: 1 1 300px;
+  text-align: center;
+}
+
+.about-image img {
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: contain;
+  margin: 0 auto;
+  border: none;
+  box-shadow: none;
+}
+
+.skills-columns {
+  display: flex;
+  gap: 2rem;
+  flex-wrap: wrap;
+  margin-top: 1.5rem;
+}
+
+.skill-group {
+  background: #1a1a2e;
+  padding: 1.2rem 1.5rem;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.03);
+  flex: 1 1 220px;
+}
+
+.skill-group h4 {
+  color: #ffd369;
+  margin-bottom: 0.8rem;
+}
+
+.skill-group ul {
+  list-style: inside disc;
+  color: #ccc;
+}
+
+.skill-group ul li {
+  margin-bottom: 0.5rem;
+  font-size: 0.95rem;
+}
+
+.projects {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 2rem;
+  margin-top: 1.5rem;
+}
+
+.project {
+  background: #1a1a2e;
+  border-radius: 12px;
+  padding: 1rem;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: default;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+}
+
+.project:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 10px 20px rgba(255, 215, 105, 0.4);
+}
+
+.project img {
+  width: 100%;
+  border-radius: 8px;
+  margin-bottom: 0.8rem;
+  user-select: none;
+}
+
+.project h4 {
+  color: #ffd369;
+  margin-bottom: 0.4rem;
+}
+
+.project p a {
+  color: #00ffee;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.project p a:hover {
+  color: #ffd369;
+  text-decoration: underline;
+}
+
+#github img {
+  max-width: 100%;
+  border-radius: 10px;
+  margin-bottom: 1rem;
+  user-select: none;
+}
+
+.contact-intro {
+  text-align: center;
+  font-size: 1.1rem;
+  margin-bottom: 1rem;
+  color: #bbb;
+}
+
+.contact-container {
+  display: flex;
+  justify-content: center;
+  gap: 2.5rem;
+  flex-wrap: wrap;
+  margin-top: 1rem;
+}
+
+.contact-item {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  background: #1a1a2e;
+  padding: 1rem 1.5rem;
+  border-radius: 12px;
+  min-width: 280px;
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.04);
+  transition: box-shadow 0.3s ease;
+}
+
+.contact-item:hover {
+  box-shadow: 0 0 15px #ffd369;
+}
+
+.contact-item img {
+  width: 48px;
+  height: 48px;
+  user-select: none;
+}
+
+.contact-item h4 {
+  color: #ffd369;
+  margin-bottom: 0.2rem;
+  font-size: 1.2rem;
+}
+
+.contact-item a {
+  color: #00ffee;
+  font-weight: 600;
+  text-decoration: none;
+  font-size: 1rem;
+}
+
+.contact-item a:hover {
+  color: #ffd369;
+  text-decoration: underline;
+}
+
+footer {
+  text-align: center;
+  margin-top: 4rem;
+  padding: 2rem 1rem;
+  background: #1a1a2e;
+  font-size: 1rem;
+  color: #ccc;
+  user-select: none;
+}
+
+footer a {
+  color: #ffd369;
+  text-decoration: none;
+  margin: 0 0.5rem;
+  font-weight: 500;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+
+footer hr {
+  margin: 1.5rem auto;
+  width: 80%;
+  border-color: #333;
+}
+
+@media (max-width: 900px) {
+  .home-container,
+  .about-container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .home-content,
+  .home-image,
+  .about-text,
+  .about-image {
+    max-width: 100%;
+  }
+
+  .skills-columns {
+    flex-direction: column;
+  }
+
+  .contact-container {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+@media (max-width: 480px) {
+  nav {
+    padding: 1rem;
+    gap: 1rem;
+    font-size: 0.9rem;
+  }
+
+  .home-content h1 {
+    font-size: 2rem;
+  }
+
+  .typing-text {
+    font-size: 1rem;
+    height: 1.4rem;
+  }
+
+  .button-group {
+    flex-direction: column;
+  }
+
+  .resume-btn,
+  .github-btn {
+    width: 100%;
+    text-align: center;
+  }
+}

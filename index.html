@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Naitik Gupta | Frontend Developer Portfolio</title>
+  <meta name="description" content="Naitik Gupta's official portfolio website – showcasing frontend projects, skills, coding stats and resume." />
+  <meta name="keywords" content="Naitik Gupta, Frontend Developer, Portfolio, HTML, CSS, JavaScript, Projects, KIET" />
+  <meta name="author" content="Naitik Gupta" />
+  <meta property="og:title" content="Naitik Gupta | Frontend Developer" />
+  <meta property="og:description" content="Creative and passionate frontend developer showcasing projects and skills." />
+  <meta property="og:image" content="naitik-transparent.png" />
+  <meta property="og:type" content="website" />
+  <link rel="icon" href="favicon.png" type="image/png" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <header>
+    <nav>
+      <a href="#" onclick="showSection('home')">Home</a>
+      <a href="#" onclick="showSection('about')">About</a>
+      <a href="#" onclick="showSection('skills')">Skills</a>
+      <a href="#" onclick="showSection('projects')">Projects</a>
+      <a href="#" onclick="showSection('github')">GitHub</a>
+      <a href="#" onclick="showSection('contact')">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="section" id="home">
+      <div class="home-container">
+        <div class="home-content">
+          <h1>Hello, I'm <span class="highlight">Naitik Gupta</span></h1>
+          <div class="typing-text" id="typing"></div>
+          <p>Frontend Developer | DSA Enthusiast | Creative Coder</p>
+          <div class="button-group">
+            <a href="Naitik_Gupta_Resume.pdf" class="resume-btn" download>📄 Download Resume</a>
+            <a href="https://github.com/naitik2043" class="github-btn" target="_blank">⭐ Visit GitHub</a>
+          </div>
+        </div>
+        <div class="home-image">
+          <img src="https://cdn-icons-png.flaticon.com/512/1055/1055688.png" alt="Minimal Developer" />
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="about">
+      <div class="about-container">
+        <div class="about-text">
+          <h1>Hi, I'm <span style="color:#ffd369;">Naitik Gupta</span></h1>
+          <h3>Frontend Developer | Creative Coder | DSA Enthusiast</h3>
+          <p class="tagline">Blending design with logic to craft better web experiences.</p>
+          <a href="Naitik_Gupta_Resume.pdf" download class="resume-btn">📄 Download Resume</a>
+          <a href="https://github.com/naitik2043" class="github-btn" target="_blank">⭐ Visit GitHub</a>
+          <div class="about-details">
+            <p>
+              📍 Ghaziabad, India<br />
+              🎓 B.Tech @ <strong>KIET Group of Institutions</strong><br />
+              💻 HTML, CSS, JavaScript, C++, DSA<br />
+              ⚔️ LeetCode <strong>1660</strong> • CodeChef <strong>2★</strong> • Codeforces <strong>916</strong><br />
+              🌱 Exploring JS DOM, SEO, multilingual websites
+            </p>
+          </div>
+        </div>
+        <div class="about-image">
+          <img src="naitik-transparent.png" alt="Naitik Gupta" />
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="skills">
+      <h2>💼 Skills</h2>
+      <div class="skills-columns">
+        <div class="skill-group">
+          <h4>Frontend</h4>
+          <ul>
+            <li>HTML5</li>
+            <li>CSS3</li>
+            <li>JavaScript</li>
+            <li>Responsive Design</li>
+          </ul>
+        </div>
+        <div class="skill-group">
+          <h4>Programming</h4>
+          <ul>
+            <li>C++</li>
+            <li>Data Structures</li>
+            <li>Algorithms</li>
+          </ul>
+        </div>
+        <div class="skill-group">
+          <h4>Tools</h4>
+          <ul>
+            <li>Git & GitHub</li>
+            <li>VS Code</li>
+            <li>Chrome DevTools</li>
+          </ul>
+        </div>
+        <div class="skill-group">
+          <h4>Currently Learning</h4>
+          <ul>
+            <li>JavaScript DOM</li>
+            <li>SEO</li>
+            <li>PWA</li>
+            <li>Multilingual Support</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="projects">
+      <h2>🚀 Projects</h2>
+      <div class="projects">
+        <div class="project">
+          <img src="techsphere.png" alt="TechSphere Blog Grid" />
+          <h4>TechSphere Blog Grid</h4>
+          <p>
+            Responsive blog layout with animations and dark theme.<br />
+            <a href="https://naitik2043.github.io/techsphere-blog-grid/" target="_blank">Live Demo</a> • 
+            <a href="https://github.com/naitik2043/techsphere-blog-grid" target="_blank">GitHub →</a>
+          </p>
+        </div>
+        <div class="project">
+          <img src="recipe.png" alt="Gupta Ji Ki Mitti Rasoi" />
+          <h4>Gupta Ji Ki Mitti Rasoi</h4>
+          <p>
+            Indian sweets recipe page built with pure HTML & CSS.<br />
+            <a href="https://naitik2043.github.io/gupta-ji-mitti-rasoi/" target="_blank">Live Demo</a> • 
+            <a href="https://github.com/naitik2043/gupta-ji-mitti-rasoi" target="_blank">GitHub →</a>
+          </p>
+        </div>
+        <div class="project">
+          <img src="helpinghands.png" alt="Helping Hearts" />
+          <h4>Helping Hearts</h4>
+          <p>
+            Minimal UPI donation card UI for social campaigns.<br />
+            <a href="https://github.com/naitik2043/helping-hearts" target="_blank">GitHub →</a>
+          </p>
+        </div>
+        <div class="project">
+          <img src="connectKart.png" alt="ConnectKart" />
+          <h4>ConnectKart</h4>
+          <p>
+            Simple e-commerce layout using HTML & CSS.<br />
+            <a href="https://github.com/naitik2043/ConnectKart" target="_blank">GitHub →</a>
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="github">
+      <h2>📈 GitHub Stats</h2>
+      <p style="text-align: center;">
+        <img src="https://github-readme-stats.vercel.app/api?username=naitik2043&show_icons=true&theme=radical&hide_border=true" />
+        <br />
+        <img src="https://github-readme-streak-stats.herokuapp.com?user=naitik2043&theme=radical&hide_border=true" />
+      </p>
+    </section>
+
+    <section class="section" id="contact">
+      <h2>📫 Let's Connect</h2>
+      <p class="contact-intro">Feel free to reach out via email or connect on GitHub/LinkedIn!</p>
+      <div class="contact-container">
+        <div class="contact-item">
+          <img src="https://img.icons8.com/color/48/gmail-new.png" alt="Email" />
+          <div>
+            <h4>Email</h4>
+            <a href="mailto:naitikgupta2043@gmail.com">naitikgupta2043@gmail.com</a>
+          </div>
+        </div>
+        <div class="contact-item">
+          <img src="https://img.icons8.com/color/48/linkedin.png" alt="LinkedIn" />
+          <div>
+            <h4>LinkedIn</h4>
+            <a href="https://www.linkedin.com/in/naitik-gupta-81700233a" target="_blank">View Profile</a>
+          </div>
+        </div>
+        <div class="contact-item">
+          <img src="https://img.icons8.com/ios-glyphs/48/github.png" alt="GitHub" />
+          <div>
+            <h4>GitHub</h4>
+            <a href="https://github.com/naitik2043" target="_blank">github.com/naitik2043</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <hr />
+    <p><strong>Naitik Gupta</strong> — Frontend Developer & Creative Coder</p>
+    <p>© 2025 Naitik Gupta. All rights reserved.</p>
+    <p>“Code with culture. Create with heart.”</p>
+  </footer>
+
+  <script src="script.js"></script>
+
+</body>
+</html>
